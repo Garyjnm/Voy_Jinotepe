@@ -1,2 +1,5 @@
 <Solution>
+  <Project Path="AppCore/AppCore.csproj" />
+  <Project Path="ETLService/ETLService.csproj" />
+  <Project Path="Operations/Operations.csproj" />
 </Solution>
