@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\renea\\projects\\c#\\voyJinotepe\\Voy_Jinotepe\\Operations\\Operations.csproj": {}
+    "C:\\Users\\garyn\\Desktop\\Voy_Jinotepe\\Operations\\Operations.csproj": {}
   },
   "projects": {
-    "C:\\Users\\renea\\projects\\c#\\voyJinotepe\\Voy_Jinotepe\\Operations\\Operations.csproj": {
+    "C:\\Users\\garyn\\Desktop\\Voy_Jinotepe\\Operations\\Operations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\renea\\projects\\c#\\voyJinotepe\\Voy_Jinotepe\\Operations\\Operations.csproj",
+        "projectUniqueName": "C:\\Users\\garyn\\Desktop\\Voy_Jinotepe\\Operations\\Operations.csproj",
         "projectName": "Operations",
-        "projectPath": "C:\\Users\\renea\\projects\\c#\\voyJinotepe\\Voy_Jinotepe\\Operations\\Operations.csproj",
-        "packagesPath": "C:\\Users\\renea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\renea\\projects\\c#\\voyJinotepe\\Voy_Jinotepe\\Operations\\obj\\",
+        "projectPath": "C:\\Users\\garyn\\Desktop\\Voy_Jinotepe\\Operations\\Operations.csproj",
+        "packagesPath": "C:\\Users\\garyn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\garyn\\Desktop\\Voy_Jinotepe\\Operations\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\renea\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\garyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +41,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -70,12 +67,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.15, 9.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.15, 9.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.15, 9.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
