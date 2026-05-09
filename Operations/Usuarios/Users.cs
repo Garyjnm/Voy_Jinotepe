@@ -1,7 +1,7 @@
 using APPCORE;
 using BusinessLogic.Connection;
 
-namespace Operations.Users
+namespace Operations.Usuarios
 {
     public class Users : EntityClass
     {

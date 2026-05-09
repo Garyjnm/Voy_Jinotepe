@@ -1,4 +1,4 @@
-namespace ETLService.Models
+namespace Operations.Usuarios
 {
     public class UserDto
     {

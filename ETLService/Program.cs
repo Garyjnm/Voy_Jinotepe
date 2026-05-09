@@ -1,9 +1,12 @@
 using System.Text.Json.Serialization;
-using Operations.Users;
+using Operations.Usuarios;
 // using Microsoft.AspNetCore.ResponseCompression;
 // using Operations;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
+// Cargar variables de entorno desde .env
+Env.Load();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options => {
