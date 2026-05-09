@@ -9,11 +9,14 @@ namespace BusinessLogic.Connection
         public BDConnection()
         {
             string password = Environment.GetEnvironmentVariable("SQL_PASSWORD") ?? "";
+            string user = Environment.GetEnvironmentVariable("SQL_USER") ?? "";
 
-            DBOrigen = SqlADOConexion.BuildDataMapper(".", "sa", password, "");
-            DBDestino = SqlADOConexion.BuildDataMapper(".", "sa", password, "");
-            DBDestino?.GDatos.TestConnection();
-            DBOrigen?.GDatos.TestConnection();
+            DBOrigen = SqlADOConexion.BuildDataMapper(".", "sa", "Rambito_12" , "VoyJinotepe");
+            // DBDestino = SqlADOConexion.BuildDataMapper(".", user, password, "");
+
+            // DBDestino?.GDatos.TestConnection();
+            Console.WriteLine("Conexión a BD Destino exitosa");
+            // DBOrigen?.GDatos.TestConnection();
         }
     }
 }

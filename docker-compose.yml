@@ -7,3 +7,7 @@ services:
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=${SQL_PASSWORD}
+    volumes:
+      - sql_data:/var/opt/mssql
+volumes:
+  sql_data:

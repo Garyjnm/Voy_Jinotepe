@@ -3,9 +3,9 @@ using BusinessLogic.Connection;
 
 namespace Operations.Users
 {
-    public class UserEntity : EntityClass
+    public class Users : EntityClass
     {
-        public UserEntity()
+        public Users()
         {
             this.MDataMapper = new BDConnection().DBOrigen;
         }
@@ -15,7 +15,7 @@ namespace Operations.Users
 
         public string? username { get; set; }
 
-        public string? password_hash { get; set; }
+        public string? password { get; set; }
 
         public int? id_rol { get; set; }
     }

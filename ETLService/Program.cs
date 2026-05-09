@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using Operations.Users;
 // using Microsoft.AspNetCore.ResponseCompression;
 // using Operations;
 
@@ -10,6 +11,7 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
 
+builder.Services.AddScoped<Users>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
