@@ -1,4 +1,4 @@
-namespace Operations.Usuarios
+namespace Operations.Users
 {
     public class UserDto
     {
