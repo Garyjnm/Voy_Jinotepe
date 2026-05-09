@@ -11,10 +11,13 @@ namespace ETLService.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Users>> GetUsers()
         {
+            List<Users> usuarios = new Users().Get<Users>();;
             try
             {
-                var entity = new Users();
-                var usuarios = entity.Where<Users>();
+                if (usuarios == null || usuarios.Count == 0)
+                {
+                    return NotFound();
+                }
                 return Ok(usuarios);
             }
             catch (Exception ex)

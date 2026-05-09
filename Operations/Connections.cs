@@ -8,14 +8,8 @@ namespace BusinessLogic.Connection
         public WDataMapper? DBDestino { get; set; }
         public BDConnection()
         {
-            // string password = Environment.GetEnvironmentVariable("SQL_PASSWORD") ?? throw new InvalidOperationException("SQL_PASSWORD no configurada");
-            // string user = Environment.GetEnvironmentVariable("SQL_USER") ?? throw new InvalidOperationException("SQL_USER no configurada");
-            // string server = Environment.GetEnvironmentVariable("SQL_SERVER") ?? ".";
-            // string database = Environment.GetEnvironmentVariable("SQL_DATABASE") ?? "VoyJinotepe";
-
             DBOrigen = SqlADOConexion.BuildDataMapper(".", "sa", "Rambito_12", "VoyJinotepe");
-
-            Console.WriteLine("Conexión a BD Origen exitosa");
+            DBOrigen?.GDatos.TestConnection();
         }
     }
 }

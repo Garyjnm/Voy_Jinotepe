@@ -4,9 +4,9 @@ using Operations.Usuarios;
 // using Operations;
 using DotNetEnv;
 
-var builder = WebApplication.CreateBuilder(args);
 // Cargar variables de entorno desde .env
 Env.Load();
+var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()
     .AddJsonOptions(options => {
