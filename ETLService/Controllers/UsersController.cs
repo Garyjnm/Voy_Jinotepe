@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Operations.Users;
 using ETLService.Security;
 using APPCORE;
@@ -9,6 +10,7 @@ namespace ETLService.Controllers
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
+        [Authorize(Roles = "admin")]
         // GET: /api/users
         [HttpGet]
         public ActionResult<IEnumerable<UserDto>> GetAll()
@@ -26,6 +28,7 @@ namespace ETLService.Controllers
             return Ok(result);
         }
 
+        [Authorize(Roles = "admin")]
         // GET: /api/users/5
         [HttpGet("{id:int}")]
         public ActionResult<UserDto> GetById(int id)
@@ -46,6 +49,7 @@ namespace ETLService.Controllers
             });
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPost]
         public IActionResult CreateUser([FromBody] RegisterUserDto dto)
         {

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Operations.Users; 
+using Operations.Roles;
 using ETLService.Security;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -32,11 +33,16 @@ public class AuthController : ControllerBase
         if (!PasswordHasher.Verify(dto.password, user.password!))
             return Unauthorized();
 
+        var rolesEntity = new Roles();
+        var role = rolesEntity.Find<Roles>(FilterData.Equal("id_rol", user.id_rol!));
+        string nombreRol = role?.nombre_rol ?? "User";
+
         // 3. Generar JWT
        var claims = new[]
         {
             new Claim(ClaimTypes.NameIdentifier, user.id_usuario!.ToString()!),
             new Claim(ClaimTypes.Name, user.username!),
+            new Claim(ClaimTypes.Role, nombreRol),
         };
 
         // Obtenemos la llave del appsettings.json
