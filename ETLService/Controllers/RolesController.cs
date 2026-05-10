@@ -3,6 +3,7 @@ using Operations.Roles;
 
 namespace ETLService.Controllers
 {
+    // [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class RolesController : ControllerBase

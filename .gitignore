@@ -12,6 +12,7 @@
 *.sln.docstates
 *.vscode
 *.env
+*.devcontainer
 
 # Base de datos local de Docker
 mssql_data/
