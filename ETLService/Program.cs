@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-// Cargar variables de entorno desde .env
-Env.Load();
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
 builder.Services.AddControllers()
     .AddJsonOptions(options => {
@@ -17,14 +16,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options => {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = true,
-            ValidateAudience = true,
+            
+            ValidateIssuer = false,
+            ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = "mi-api",
-            ValidAudience = "mi-api-users",
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes("LlaveUltraSecretaDe32+Caracteres"))
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+       
         };
     });
 
@@ -43,8 +42,6 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
-
-// await new StartServices().StartServicesApp(); 
 
 if (app.Environment.IsDevelopment())
 {
