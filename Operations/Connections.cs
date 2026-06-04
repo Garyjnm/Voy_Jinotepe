@@ -8,7 +8,7 @@ namespace BusinessLogic.Connection
         public WDataMapper? DBDestino { get; set; }
         public BDConnection()
         {
-            DBOrigen = SqlADOConexion.BuildDataMapper(".", "sa", "Rambito_12", "VoyJinotepe");
+            DBOrigen = SqlADOConexion.BuildDataMapper(".\\MYSQL", "sa", "Gary1234", "VoyJinotepe1");
             DBOrigen?.GDatos.TestConnection();
         }
     }
