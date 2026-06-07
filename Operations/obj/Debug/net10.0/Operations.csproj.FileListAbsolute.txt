@@ -1,0 +1,12 @@
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/bin/Debug/net10.0/Operations.deps.json
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/bin/Debug/net10.0/Operations.dll
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/bin/Debug/net10.0/Operations.pdb
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/obj/Debug/net10.0/Operations.GeneratedMSBuildEditorConfig.editorconfig
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/obj/Debug/net10.0/Operations.AssemblyInfoInputs.cache
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/obj/Debug/net10.0/Operations.AssemblyInfo.cs
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/obj/Debug/net10.0/Operations.csproj.CoreCompileInputs.cache
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/obj/Debug/net10.0/Operations.sourcelink.json
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/obj/Debug/net10.0/Operations.dll
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/obj/Debug/net10.0/refint/Operations.dll
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/obj/Debug/net10.0/Operations.pdb
+/tmp/workspace/Garyjnm/Voy_Jinotepe/Operations/obj/Debug/net10.0/ref/Operations.dll

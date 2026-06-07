@@ -1,0 +1,12 @@
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/bin/Debug/net10.0/AppCore.deps.json
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/bin/Debug/net10.0/AppCore.dll
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/bin/Debug/net10.0/AppCore.pdb
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/obj/Debug/net10.0/AppCore.GeneratedMSBuildEditorConfig.editorconfig
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/obj/Debug/net10.0/AppCore.AssemblyInfoInputs.cache
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/obj/Debug/net10.0/AppCore.AssemblyInfo.cs
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/obj/Debug/net10.0/AppCore.csproj.CoreCompileInputs.cache
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/obj/Debug/net10.0/AppCore.sourcelink.json
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/obj/Debug/net10.0/AppCore.dll
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/obj/Debug/net10.0/refint/AppCore.dll
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/obj/Debug/net10.0/AppCore.pdb
+/tmp/workspace/Garyjnm/Voy_Jinotepe/AppCore/obj/Debug/net10.0/ref/AppCore.dll
