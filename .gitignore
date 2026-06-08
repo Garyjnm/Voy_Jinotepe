@@ -13,6 +13,8 @@
 *.vscode
 *.env
 *.devcontainer
+.repomixignore
+*repomix-output.xml
 
 # Base de datos local de Docker
 mssql_data/
